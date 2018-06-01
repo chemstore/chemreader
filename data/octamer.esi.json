@@ -1,0 +1,24 @@
+{
+    "start": "OCCSC[C+]=O",
+    "stop": "[NH]C1CCSC1=O",
+    "backbone": "[NH]C(CCSCCC([O])=O)C(NCCO[C+]=O)=O",
+    "stop_fragments": [
+        "[NH]C(CCSCCC([O])=O)C(NC[CH2+])=O",              # primary start fragment
+        "[NH]C([C+]=O)CCSCCC([O])=O",                     # alternative start fragment
+        "[NH]C(CCSCCC([O])=O)C(NCCO[C+]=O)=O"             # complete backbone
+    ],
+    "start_fragments": [
+        "[NH3+]C(CCSCCC([O])=O)C(NCCO[C+]=O)=O",          # primary stop fragment
+        "O=[C+]OCCNC(C(CCSCCC([O])=O)NC(OCC[NH3+])=O)=O"  # complete backbone + extra fragment
+    ],
+    "flags": {
+        "A": "[CH2+]C1=CC=CC=C1",
+        "B": "[CH3+]",
+        "C": "[CH2+]C1OCCC1",
+        "D": "[CH2+]CCC",
+        "E": "CC1(C2(C)C)[CH+]CC2CC1",
+#        "?": "[H].[H]"
+    },
+    "multiplyCharged": True,
+    "charge": 1.00784
+}
